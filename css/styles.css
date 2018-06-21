@@ -45,6 +45,7 @@ nav {
   background-color: #252831;
   text-align: center;
   display: grid;
+  padding: 0 10px;
 }
 
 nav h1 {
@@ -186,8 +187,9 @@ nav h1 a {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
 }
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
@@ -196,19 +198,22 @@ nav h1 a {
   top: 80px;
   width: 50%;
 }
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
 }
+
 .inside #footer {
   bottom: 0;
   position: absolute;
   width: 50%;
 }
+
 #restaurant-name {
+  padding-top: 20px;
   color: #f18200;
-  font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
@@ -216,13 +221,16 @@ nav h1 a {
   text-transform: uppercase;
   line-height: 1.1;
 }
+
 #restaurant-img {
 	width: 90%;
 }
+
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
 }
+
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
@@ -235,15 +243,18 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
 }
+
 #reviews-container {
   padding: 30px 40px 80px;
 }
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -251,24 +262,64 @@ nav h1 a {
   letter-spacing: -1px;
   padding-bottom: 1pt;
 }
+
 #reviews-list {
   margin: 0;
   padding: 0;
 }
+
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px;
   position: relative;
   width: 85%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 #reviews-list li p {
   margin: 0 0 10px;
 }
+
+#reviews-list li p:first-child {
+  color: #f58500;
+}
+
 #restaurant-hours td {
   color: #666;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 767px) {
+  #breadcrumb {
+    width: 100%;
+  }
+
+  .inside #maincontent {
+    padding-top: 140px;
+  }
+
+  .inside #map-container {
+    position: static;
+    height: 300px;
+    width: 100%;
+  }
+
+  #restaurant-container {
+    padding: 20px 0 30px 40px;
+  }
+
+  #restaurant-container, #reviews-container, .inside #footer {
+    width: 100%;
+  }
+
+  #reviews-list li {
+    width: 100%;
+  }
+
 }
