@@ -30,7 +30,7 @@ initMap = () => {
         id: 'mapbox.streets'    
       }).addTo(newMap);
       fillBreadcrumb();
-      DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
+      DBHelper.mapMarkerForRehtaurant(self.restaurant, self.newMap);
     }
   });
 }  
