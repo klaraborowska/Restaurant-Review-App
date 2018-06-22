@@ -370,3 +370,9 @@ nav h1 a {
     padding-top: 10px;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  #restaurants-list {
+    padding: 50px 20px;
+  }
+}
