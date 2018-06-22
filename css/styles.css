@@ -266,7 +266,7 @@ nav h1 a {
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
-  padding-bottom: 1pt;
+  padding-bottom: 20px;
 }
 
 #reviews-list {
@@ -279,16 +279,16 @@ nav h1 a {
   border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 40px;
+  margin: 0 0 50px;
   overflow: hidden;
   position: relative;
   width: 90%;
   border-radius: 30px 2px 30px 2px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   display: grid;
   grid-template-columns: 130px 1fr 1fr 100px;
-  grid-template-rows: 50px 20px fit;
-  grid-gap: 15px 0;
+  grid-template-rows: 40px 20px fit;
+  grid-gap: 20px 0;
 }
 
 #reviews-list li p {
@@ -369,5 +369,4 @@ nav h1 a {
   #reviews-container {
     padding-top: 10px;
   }
-
 }
