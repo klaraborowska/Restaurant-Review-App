@@ -4,6 +4,7 @@ let restaurants,
 var newMap
 var markers = []
 
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -167,7 +168,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  more.setAttribute("aria-label", `View '${restaurant.name}' details`);
+  more.setAttribute("aria-label", `View '${restaurant.name}' restaurant details`);
   more.setAttribute("role", "link");
   li.append(more)
 
@@ -185,6 +186,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     function onClick() {
       window.location.href = marker.options.url;
     }
+
     self.markers.push(marker);
   });
 } 
