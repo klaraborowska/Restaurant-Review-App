@@ -5,23 +5,23 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
-	background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5;
+  background-color: #fdfdfd;
   margin: 0;
   position: relative;
 }
 
 a {
-	color: orange;
-	text-decoration: none;
+  color: orange;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+  color: #3397db;
+  text-decoration: none;
 }
 
 #maincontent {
@@ -63,34 +63,34 @@ nav h1 a {
 }
 
 #breadcrumb {
-    padding: 20px 40px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 12pt;
-    height: 60px;
-    margin: 0;
-    width: 50%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px 40px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 12pt;
+  height: 60px;
+  margin: 0;
+  width: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 
 /* ====================== Map ====================== */
@@ -249,7 +249,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
 
 #restaurant-container, #reviews-container {
@@ -263,7 +263,7 @@ nav h1 a {
   padding: 10px 40px 80px;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
   color: #f18200;
   font-size: 24pt;
   font-weight: 300;
